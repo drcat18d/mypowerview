@@ -1,0 +1,3 @@
+foreach($line in Get-Content .\file.txt) { 
+        Get-NetLocalGroupMember -Api -ComputerName $line | ft -autosize
+}
